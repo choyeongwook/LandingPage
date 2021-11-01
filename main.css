@@ -1,0 +1,668 @@
+.App {
+    text-align: center;
+  }
+  
+  body {
+    font-family:
+    'nanumsquare';
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, em, figure, figcaption, address {
+    padding: 0;
+    margin: 0;
+    font: inherit; }
+  
+  ul, ol {
+    list-style: none; }
+    
+  html, body, #app {
+    min-width: 320px;
+    height: 100%; }
+  
+  a {
+    color: inherit;
+    text-decoration: none; }
+  
+  img {
+    vertical-align: top; }
+  
+  body {
+    overflow-x: hidden;
+    position: relative;
+    font-family: "AppleSDGothicNeo", sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+  
+  a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: 0;
+    color: #333333; }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: baseline; }
+  
+  .container {
+    overflow: hidden;
+    width: 100%; }
+    .container .error-wrap {
+      height: 100vh;
+      min-height: 500px;
+      background: url(img/apple.png) no-repeat;
+      background-position: 50% 0; }
+      .container .error-wrap .content .error-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        z-index: 100; }
+        .container .error-wrap .content .error-message .title {
+          width: 100%;
+          text-align: center; }
+        .container .error-wrap .content .error-message .txt-error {
+          padding-top: 30px;
+          font-size: 12px;
+          line-height: 1.6em;
+          text-align: center; }
+        .container .error-wrap .content .error-message .btn-group {
+          width: 100%;
+          padding-top: 40px; }
+          .container .error-wrap .content .error-message .btn-group .btn-home {
+            display: block;
+            text-align: center; }
+  
+  
+  /* main */
+  .container {
+    overflow: hidden;
+    width: 100%;
+    /* animations */
+    /* modal popup */ }
+    .container .top-fixed {
+      position: fixed;
+      width: 100%;
+      top: 0px;
+      z-index: 10; }
+      .container .top-fixed .logo {
+        display: block;
+        margin: 5px 0 0 6%;
+        width: 28%;
+        max-width: 142px; }
+      
+  
+      .container .top-fixed .app-download {
+        position: absolute;
+        width: 45%;
+        top: 19px;
+        right: 0; }
+   
+  
+    .container .icon-scroll {
+      position: fixed;
+      display: block;
+      bottom: 3%;
+      left: 50%;
+      width: 80px;
+      z-index: 100; }
+    .container .jump {
+      -webkit-animation: jump 0.5s ease 0s 3 normal;
+      animation: jump 0.5s ease 0s 3 normal; }
+    .container header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: #FFFFFF; }  /*첫페이지 배경색*/
+      .container header .zoom-in {
+        -webkit-animation: zoom-in 1s linear 0s 1 normal forwards;
+        animation: zoom-in 1s linear 0s 1 normal forwards; }
+      .container header .type1 {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        background: url(img/apple.png);
+      }
+      .container header .header-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+        .container header .header-content .header-text {
+          position: absolute;
+          top: 18%;
+          left: 6%; }
+          .container header .header-content .header-text h1 {
+            width: 85%;
+            max-width: 440px; }
+        .container header .header-content .app-download {
+          position: absolute;
+          bottom: 0;
+          max-width: 262px;
+          right: 0;
+          width: 55%; }
+    .container .section {
+      overflow: hidden; }
+      .container .section#bmart .content .cont-text h2 {
+        padding-right: 10%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+      .container .section .content {
+        position: relative;
+        height: 100vh;
+        padding: 0 6%;
+        color: #ffffff; /*중간페이지 글자색*/
+        background: #BBBBBB; /*중간페이지 배경색*/
+        
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+  
+        .container .section .content .cont-text {
+          padding-top: 32%; }
+          .container .section .content .cont-text h2 {
+            width: 85%; }
+            .container .section .content .cont-text h2 img {
+              -o-object-fit: contain;
+                 object-fit: contain;
+              -o-object-position: left center;
+                 object-position: left center;
+              max-height: 26.98vh; }
+        .container .section .content .cont-desc {
+          position: relative;
+          margin-top: 6%;
+          font-weight: 300; }
+          .container .section .content .cont-desc + .service-noti {
+            margin-top: 6px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            padding-right: calc(5% + 24px);
+            position: relative;
+            z-index: 10; }
+            .container .section .content .cont-desc + .service-noti > li:nth-of-type(2) {
+              display: none; }
+          .container .section .content .cont-desc .sub-desc {
+            display: block;
+            font-size: 0.9em;
+            font-weight: 100;
+            line-height: 2em; }
+        .container .section .content .animation {
+          text-align: center; }
+          .container .section .content .animation img {
+            max-height: 30.88vh;
+            -o-object-fit: contain;
+               object-fit: contain;
+            -o-object-position: center;
+               object-position: center; }
+          .container .section .content .animation img {
+            vertical-align: top; }
+   
+          .container .section .content .animation .road {
+            position: absolute;
+            bottom: 30%;
+            right: 32%;
+            width: 42%; }
+          .container .section .content .animation.people {
+            position: absolute;
+            bottom: 30%;
+            right: 32%;
+            width: 42%;; }
+          
+  
+    .container footer {
+      overflow: hidden; }
+      .container footer .content {
+        position: relative;
+        height: 100vh;
+        padding: 10% 6%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+        .container footer .content.bg_footer {
+          background: #ffffff;  /*마지막페이지 배경색*/
+          padding: 5% 5%; }
+        .container footer .content .txt-footer {
+          width: 40%; }
+        .container footer .content .app-download {
+          position: absolute;
+          top: 4%;
+          right: 0;
+          width: 45%; }
+        .container footer .content .family-link {
+          overflow: hidden;
+          margin: 10% 0 5%;
+          width: 100%; }
+          .container footer .content .family-link li {
+            display: inline-block;
+            margin-right: 8px;
+            width: auto; }
+            .container footer .content .family-link li a {
+              display: block; }
+              .container footer .content .family-link li a img {
+                display: inline-block;
+                height: 1.5em; }
+          .container footer .content .family-link .family-link-second-line {
+            margin-top: 3%; }
+            .container footer .content .family-link .family-link-second-line li:first-child {
+              width: 98px; }
+        .container footer .content .company-info {
+          font-size: 0.8em;
+          color: #222222;  /*마지막페이지 회사이름 글자색*/
+          line-height: 1.7em;
+          position: absolute;
+          bottom: 5%; }
+          .container footer .content .company-info p {
+            padding-bottom: 3%; }
+          .container footer .content .company-info .link-business-info a {
+            text-decoration: none;
+            background: url(img/apple.png) bottom no-repeat;
+            background-size: 100% 4px;
+            margin-left: 10px; }
+          .container footer .content .company-info .ico-bar {
+            padding: 0 5px; }
+          .container footer .content .company-info .link-mail a {
+            text-decoration: none;
+            background: url(img/apple.png) bottom no-repeat;
+            background-size: 100% 4px; }
+        .container footer .content .company-info.isSafariMobile {
+          position: absolute;
+          bottom: 15%; }
+   
+            .container footer .content .footer-sns-list li:first-child {
+              margin-right: 0; }
+    .container .pagination {
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: 5%; }
+      .container .pagination li {
+        display: block;
+        text-align: center; }
+        .container .pagination li.blind {
+          display: none; }
+        .container .pagination li.active {
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url("img/apple.png") no-repeat;
+          background-size: 100% 100%; }
+        .container .pagination li a {
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url("img/apple.png") no-repeat;
+          background-size: 100% 100%; }
+  
+  
+  
+  /* === Tablet (min-width:768px) === */
+  @media screen and (min-width: 768px) {
+    .container { 
+      overflow: hidden;
+      /* modal popup */ }
+      .container .top-fixed .logo {
+        width: 142px;
+        margin-top: 5%; }
+      .container .top-fixed .app-download {
+        width: 200px; }
+      .container .top-fixed .sns-list {
+        display: none !important; }
+      .container header .header-content .header-text {
+        top: 20%;
+        left: 50px; }
+        .container header .header-content .header-text h1 {
+          width: 440px;
+          max-width: 440px; }
+      .container header .header-content .app-download {
+        width: 262px; }
+      
+      .container .section .content .cont-text {
+        padding-top: 20%; }
+        .container .section .content .cont-text h2 {
+          width: 65%; }
+          .container .section .content .cont-text h2 img {
+            max-height: 35.75vh; }
+      .container .section .content .cont-desc .sub-desc {
+        line-height: 3em; }
+      .container .section .content .cont-desc + .service-noti br {
+        display: none; }
+      .container .section .content .cont-desc + .service-noti > li:nth-of-type(2) {
+        display: block; }
+      .container .section .content .animation img {
+        max-height: 46.74vh;
+        -o-object-fit: contain;
+           object-fit: contain;
+        -o-object-position: center;
+           object-position: center; }
+  
+      .container .section .content .animation .road {
+        position: absolute;
+        bottom: 16%;
+        right: 21%;
+        width: 232px; }
+      .container .section .content .animation.people {
+        position: absolute;
+        bottom: 16%;
+        right: 21%;
+        width: 232px; }
+    
+      .container footer .content .txt-footer {
+        width: 45%; }
+      .container footer .content .family-link {
+        overflow: visible;
+        width: 450px; }
+        .container footer .content .family-link li {
+          margin-right: 23px; }
+          .container footer .content .family-link li a {
+            display: block; }
+            .container footer .content .family-link li a img {
+              display: inline-block;
+              height: 30px; }
+        .container footer .content .family-link .family-link-second-line li:first-child {
+          width: 138px; }
+        .container footer .content .family-link .family-link-second-line li:last-child {
+          margin-right: 0; }
+      .container footer .content .footer-sns-list li {
+        width: 40px; }
+      .container footer .content .company-info {
+        font-size: 15px;
+        position: relative;
+        bottom: auto; }
+        .container footer .content .company-info p {
+          padding-bottom: 2%; }
+      .container .modal .modal-content {
+        padding: 40px 0;
+        background: #fff url("img/apple.png") 80% 105% no-repeat;
+        background-size: 95px 112px; }
+        .container .modal .modal-content .content {
+          position: relative;
+          max-width: 1024px;
+          margin: 0 auto; }
+          .container .modal .modal-content .content .title {
+            padding-bottom: 22px;
+            width: 537px;
+            margin: 0 auto; }
+          .container .modal .modal-content .content .txt-desc {
+            color: #BBBBBB;
+            font-size: 0.9em;
+            font-weight: 100;
+            padding-bottom: 10px; }
+          .container .modal .modal-content .content form .input-box {
+            overflow: hidden;
+            position: relative;
+            width: 330px;
+            height: 50px;
+            margin: 0 auto 10px;
+            border: 1px solid #333333;
+            border-radius: 50px; }
+            .container .modal .modal-content .content form .input-box.dimmed {
+              border-color: #cccccc; }
+              .container .modal .modal-content .content form .input-box.dimmed input {
+                color: #cccccc; }
+            .container .modal .modal-content .content form .input-box input {
+              width: 240px;
+              padding: 17px 0;
+              margin-right: 50px;
+              font-size: 14px;
+              text-align: left; }
+            .container .modal .modal-content .content form .input-box button {
+              position: absolute;
+              top: 17px;
+              right: 5px;
+              width: 67px; }
+              .container .modal .modal-content .content form .input-box button.btn-confirm {
+                width: 54px; }
+          .container .modal .modal-content .content form .app-ping-timer {
+            margin: 33px 0; }
+          .container .modal .modal-content .content form .terms-box {
+            margin-top: 20px;
+            position: relative;
+            left: 20px; }
+            .container .modal .modal-content .content form .terms-box input[type=checkbox] {
+              position: absolute;
+              z-index: -1;
+              opacity: 0; }
+              .container .modal .modal-content .content form .terms-box input[type=checkbox]:checked + label::before {
+                height: 31px;
+                top: -14px;
+                border: none;
+                background: url("img/apple.png");
+                background-size: cover; }
+              .container .modal .modal-content .content form .terms-box input[type=checkbox] + label {
+                padding-right: 13px;
+                position: relative;
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+                letter-spacing: -1px;
+                color: #4a4a4a; }
+                .container .modal .modal-content .content form .terms-box input[type=checkbox] + label::before {
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  -webkit-box-sizing: border-box;
+                          box-sizing: border-box;
+                  position: absolute;
+                  top: -3px;
+                  left: -34px;
+                  border: 1px solid #979797;
+                  background: #f4f4f4;
+                  content: ''; }
+            .container .modal .modal-content .content form .terms-box a {
+              font-size: 14px;
+              line-height: 17px;
+              font-weight: normal;
+              text-decoration: underline;
+              letter-spacing: -1px;
+              color: #9b9b9b;
+              cursor: pointer; }
+          .container .modal .modal-content .content form .terms-table {
+            width: 380px;
+            margin: 21px auto 28px;
+            border-collapse: collapse; }
+            .container .modal .modal-content .content form .terms-table th {
+              padding: 9px 0 6px;
+              background: #bababa;
+              color: #ffffff;
+              font-size: 13px;
+              letter-spacing: -1px;
+              border: 1px solid #979797; }
+            .container .modal .modal-content .content form .terms-table td {
+              padding: 11px 0;
+              color: #4a4a4a;
+              border: 1px solid #979797;
+              font-size: 13px;
+              letter-spacing: -1px; }
+          .container .modal .modal-content .content .img-box {
+            width: 378px;
+            margin: 0 auto;
+            line-height: 0; }
+          .container .modal .modal-content .content .notice {
+            width: 500px;
+            margin: 20px auto 0; }
+            .container .modal .modal-content .content .notice .txt-notice {
+              margin-left: 70px;
+              font-size: 0.8em;
+              font-weight: 100;
+              color: #888888;
+              line-height: 1.6em;
+              text-align: left; }
+          .container .modal .modal-content .content .pc-modal-close {
+            right: 5%;
+            top: 0; } }
+  
+  /* === PC (min-width:1024px) === */
+  @media screen and (min-width: 1024px) {
+    /* === main === */
+    .container {
+      overflow: hidden; }
+      .container .top-fixed {
+        width: 1024px;
+        min-width: 1024px !important;
+        left: 50%;
+        margin-left: -512px; }
+        .container .top-fixed .logo {
+          margin-top: 60px;
+          margin-left: 50px; }
+        .container .top-fixed .app-download {
+          width: 200px;
+          right: 10px;
+          top: 130px; }
+        .container .top-fixed .sns-list {
+          display: block !important;
+          position: absolute;
+          bottom: 0;
+          right: 100px;
+          width: 50%;
+          text-align: right; }
+          .container .top-fixed .sns-list li {
+            display: inline-block;
+            width: 10%;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: 0; }
+            .container .top-fixed .sns-list li:first-child {
+              margin-right: -5px; }
+      .container .icon-scroll {
+        left: 50%; }
+      .container header .header-content {
+        max-width: 1024px; }
+        .container header .header-content h1 {
+          width: 440px; }
+        .container header .header-content .app-download {
+          width: 262px; }
+      .container .section {
+        background: #BBBBBB; }
+        .container .section #bmart .content .cont-text h2 {
+          padding-right: 0;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box; }
+        .container .section .content {
+          width: 1024px;
+          margin: 0 auto;
+          padding: 0 50px; }
+          .container .section .content .b2b-coupon {
+            margin-top: 35px; }
+          .container .section .content .cont-text {
+            padding-top: 165px; }
+            .container .section .content .cont-text h2 {
+              width: 500px; }
+              .container .section .content .cont-text h2 img {
+                display: block;
+                width: 100%;
+                max-height: 29.25vh; }
+          .container .section .content .cont-desc {
+            margin-top: 3%; }
+            .container .section .content .cont-desc .sub-desc {
+              display: block;
+              font-size: 1em;
+              line-height: 3em; }
+          .container .section .content .animation .bike {
+            width: 204px; }
+          .container .section .content .animation .road {
+            position: absolute;
+            width: 232px; }
+          .container .section .content .animation.people {
+            width: 400px;
+            right: 40px; }
+          .container .section .content .animation.flag {
+            width: 352px;
+            right: 10%; }
+          .container .section .content .animation.bmart-rider {
+            text-align: left;
+            width: 600px;
+            bottom: 16%; }
+            .container .section .content .animation.bmart-rider .text-event {
+              position: absolute;
+              top: 0;
+              right: 200px;
+              width: 125px;
+              display: block; }
+          .container .section .content .pagination {
+            top: 55%;
+            right: 5%; }
+          .container .section .content .icon-scroll {
+            margin: 0 auto; }
+      .container footer.section {
+        background: #ffffff; }
+      .container footer .content .footer-title {
+        width: 40%;
+        float: right; }
+        .container footer .content .footer-title .txt-footer {
+          width: 176px;
+          padding-top: 0; }
+      .container footer .content .app-download {
+        width: 25%; }
+      .container footer .content .family-link {
+        margin-top: 0; }
+      .container footer .content .footer-sns-list {
+        width: 30%;
+        margin-left: -1%; }
+        .container footer .content .footer-sns-list li {
+          margin-right: 6%; }
+          .container footer .content .footer-sns-list li:first-child {
+            margin-right: 0; }
+      .container footer .content.bg_footer {
+        padding-top: 7%; }
+      .container .pagination {
+        right: 5%; } }
+  
+  /* === PC (min-width:1440px) === */
+  @media screen and (min-width: 1440px) {
+    .container header .header-content {
+      max-width: 1024px; }
+      .container header .header-content h1 {
+        width: 580px; }
+    .container .btn-rider {
+      width: 173px;
+      height: 226px;
+      background: url("img/apple.png") no-repeat 0 0;
+      background-size: contain; } }
+  
+  
+  
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
