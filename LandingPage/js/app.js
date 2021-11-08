@@ -1,4 +1,12 @@
 let isModalOn = false;
+//
+
+document.querySelector(".app-download img").addEventListener("click", modalOn);
+document.querySelector(".modal_close_btn").addEventListener("click", modalOff);
+document.querySelector(".modal_bg_shadow").addEventListener("click", modalOff);
+
+document.querySelector("#burgerIcon").addEventListener("click", hamburgerOnOff);
+document.querySelector(".hamburger_bg_shadow").addEventListener("click", hamburgerOnOff);
 
 function modalOn() {
     document.querySelector(".modal").classList.add("on");
@@ -25,7 +33,7 @@ function hamburgerOnOff() {
         //메뉴 slideOut
         document.querySelector(".hamburgerMenu").classList.remove("on");
         //slideOut시 menuBtn의 img src를 menu icon으로 변경
-        document.getElementById("burgerIcon").src = "img/hamburger.png";
+        document.getElementById("burgerIcon").src = "https://firebasestorage.googleapis.com/v0/b/signor-84c8e.appspot.com/o/hamburger.PNG?alt=media&token=77192ebb-45c0-4914-9787-808cd880bf4e";
         $(".hamburger_bg_shadow").css({
             "display": "none"
         });
@@ -34,7 +42,7 @@ function hamburgerOnOff() {
         //메뉴 slideIn
         document.querySelector(".hamburgerMenu").classList.add("on");
         //slideIn시 menuBtn의 img src를 cross icon으로 변경
-        document.getElementById("burgerIcon").src = "img/close.png";
+        document.getElementById("burgerIcon").src = "https://firebasestorage.googleapis.com/v0/b/signor-84c8e.appspot.com/o/close.PNG?alt=media&token=d684c48b-abc9-4292-a122-206ff52c97ea";
         $(".hamburger_bg_shadow").css({
             "display": "block"
         });
@@ -44,11 +52,6 @@ function hamburgerOnOff() {
 
 
 
-document.querySelector(".app-download img").addEventListener("click", modalOn);
-document.querySelector(".pc-modal-close").addEventListener("click", modalOff);
-document.querySelector(".modal_bg_shadow").addEventListener("click", modalOff);
 
-document.querySelector("#burgerIcon").addEventListener("click", hamburgerOnOff);
-document.querySelector(".hamburger_bg_shadow").addEventListener("click", hamburgerOnOff);
 
 
